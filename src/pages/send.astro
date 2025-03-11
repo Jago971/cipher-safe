@@ -1,8 +1,10 @@
 ---
+import Encode from '../components/Encode.astro';
 import MasterLayout from '../layouts/MasterLayout.astro';
 const pageTitle = "Send Message";
 ---
 
 <MasterLayout pageTitle={pageTitle} subTitle="Send a secret message to someone.">
+    <Encode />
 </MasterLayout>
 

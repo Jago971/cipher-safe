@@ -1,3 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
-    background-color: gray;
+  background-color: gray;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  * {
+    border: solid 1px black;
+  }
+}
+
+/*forms*/
+form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }

@@ -1,7 +1,40 @@
 ---
-import Navigation from "./Navigation.astro";
 import "../styles/global.css";
 ---
+
 <header>
-    <Navigation />
+  <div class="title">
+    <img src="../public/lock.svg" alt="padlock" />
+    <h1>Cipher<span>Safe</span></h1>
+  </div>
+
+  <nav>
+    <a href="/">About</a>
+    <a href="/send/">Send Message</a>
+    <a href="/receive/">Receive Messages</a>
+  </nav>
 </header>
+
+<style>
+  header {
+    padding: 1rem;
+  }
+  header,
+  .title {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  img {
+    width: 2.5em;
+    fill: white;
+    filter: invert(1);
+  }
+</style>

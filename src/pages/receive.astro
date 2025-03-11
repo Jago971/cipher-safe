@@ -1,6 +1,9 @@
 ---
+import Decode from '../components/Decode.astro';
 import MasterLayout from '../layouts/MasterLayout.astro';
 const pageTitle = "Receive Messages";
 ---
 
-<MasterLayout pageTitle={pageTitle} subTitle="Check messages for you."></MasterLayout>
+<MasterLayout pageTitle={pageTitle} subTitle="Check messages for you.">
+    <Decode />
+</MasterLayout>
